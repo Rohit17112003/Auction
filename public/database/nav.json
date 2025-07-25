@@ -1,0 +1,95 @@
+{
+  "navigation": [
+    {
+      "icon": "ri-speed-up-line",
+      "route": "/",
+      "label": "dashboard"
+    },
+    {
+      "icon": "ri-auction-line",
+      "route": "/live-auctions",
+      "label": "all live auctions"
+    },
+    {
+      "icon": "ri-add-box-line",
+      "route": "/add-new-auction",
+      "label": "add new auction"
+    },
+    {
+      "icon": "ri-calendar-line",
+      "route": "/future-auctions",
+      "label": "future auctions"
+    },
+    {
+      "icon": "ri-history-line",
+      "route": "/auction-history",
+      "label": "auction history"
+    },
+    {
+      "icon": "ri-money-dollar-circle-line",
+      "route": "/payment-management",
+      "label": "payment management"
+    },
+    {
+      "icon": "ri-discount-percent-line",
+      "route": "/discount-coupons",
+      "label": "discount coupons"
+    },
+    {
+      "icon": "ri-file-text-line",
+      "route": "/income-tax-exemption",
+      "label": "income tax exemption"
+    },
+    {
+      "icon": "ri-error-warning-line",
+      "route": "/complaints",
+      "label": "complaints"
+    },
+    {
+      "icon": "ri-close-circle-line",
+      "route": "/cancellation",
+      "label": "cancellation"
+    }
+  ],
+  "stats": [
+    {
+      "icon": "ri-nurse-line",
+      "title": "No of Auction Product",
+      "value": "20"
+    },
+    {
+      "icon": "ri-nurse-line",
+      "title": "No of Successful Auction",
+      "value": "30"
+    },
+    {
+      "icon": "ri-nurse-line",
+      "title": "Value of auction sale",
+      "value": "20,00,000 INR"
+    },
+    {
+      "icon": "ri-nurse-line",
+      "title": "Balance no of auction",
+      "value": "20"
+    },{
+      "icon": "ri-nurse-line",
+      "title": "No of Auction Product",
+      "value": "20"
+    },
+    {
+      "icon": "ri-nurse-line",
+      "title": "No of Successful Auction",
+      "value": "30"
+    },
+    {
+      "icon": "ri-nurse-line",
+      "title": "Value of auction sale",
+      "value": "20, 000"
+    },
+    {
+      "icon": "ri-nurse-line",
+      "title": "Balance no of auction",
+      "value": "2000 INR"
+    }
+  ]
+}
