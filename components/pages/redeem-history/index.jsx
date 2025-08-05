@@ -4,7 +4,7 @@ import Image from "next/image";
 const RedeemHistory = () => {
   return (
     <section className="space-y-6">
-      <BannerButton route={"/"} label={"Redeem History"} />
+      <BannerButton route={"/auction-history"} label={"Auction History"} />
       <div className="rounded-xl bg-white p-6 shadow">
         <h2 className="mb-6 flex items-center gap-4 text-2xl font-bold">
           <Image
@@ -13,7 +13,7 @@ const RedeemHistory = () => {
             alt="star"
             width={100}
             height={100}
-          />{" "}
+          />
           Redeem History
         </h2>
         <div className="overflow-x-auto">

@@ -8,7 +8,7 @@ const FutureAuctions = () => {
     title="Add New Product"
     description="Add, edit and view product/service"
     image="/image/doctor.svg"
-    url="/live-auctions/add"
+    url="/future-auctions/add"
   />
   <div className="grid gap-8 lg:grid-cols-2">
     {auctions.map((auction, index) => (

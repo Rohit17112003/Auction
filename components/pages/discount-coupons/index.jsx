@@ -11,7 +11,7 @@ const DiscountCoupons = () => {
         title="Add New Coupon"
         description="Add, edit and view coupon information"
         image="/image/doctor.svg"
-        url="/live-auctions/add"
+        url="/discount-coupons/add"
       />
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

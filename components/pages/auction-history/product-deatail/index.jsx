@@ -38,7 +38,7 @@ const ProductDetail = ({ productId }) => {
             quis temporibus iste repellendus optio voluptatibus, deserunt ipsam
             quas sit ab fuga! Omnis doloribus officia pariatur dolor magni
             laborum repellendus rem eum ex voluptatem earum, similique ad cumque
-            explicabo, sint architecto voluptas. <span className="text-primary cursor-pointer">Read More</span>
+            explicabo, sint architecto voluptas. <span className="text-primary">Read More</span>
           </p>
         </div>
       </div>

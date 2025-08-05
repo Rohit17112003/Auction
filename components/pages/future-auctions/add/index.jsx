@@ -1,28 +1,18 @@
-
 "use client";
-import Image from "next/image";
-import Link from "next/link";
 import Button from "@/components/atoms/Button";
+import BannerButton from "@/components/atoms/BannerButton";
 import Input from "@/components/atoms/Input";
+import Textarea from "@/components/atoms/TextArea";
+import ImageUploader from "@/components/molecules/ImageUploader";
+import Select from "@/components/atoms/Select";
 
-const SignUp = () => {
+const AddAuction = () => {
   return (
-    <section className="bg-gradient-to-b from-[#fff6a9c4] to-[#ecd8a2c4] h-auto">
-     <div className="flex flex-col items-center gap-1 pt-4">
-          <Image
-            className="h-32 w-32 bg-cover"
-            src="/image/icon/trangle.svg"
-            alt="triangle"
-            width={100}
-            height={100}
-          />
-          <p className="mt-1 text-xl font-medium tracking-wide">
-            Winning Bids, Helping Hands.
-          </p>
-          <h2 className=" text-2xl font-bold uppercase">vendor sign in</h2>
-
-        </div>
-      <form className="grid gap-x-20 gap-y-6 lg:grid-cols-2 md:w-8/12 px-5 mx-auto py-10" action="" >
+    <section className="space-y-6 pb-8">
+      <BannerButton route={"/future-auctions"} label="Add new product for auction" />
+      <form className="grid gap-x-20 gap-y-6 lg:grid-cols-2" action="">
+        <ImageUploader />
+        <Textarea style="lg:col-span-2" placeholder="Description" />
 
         <Input
           type="text"
@@ -90,50 +80,52 @@ const SignUp = () => {
           placeholder="Date of Auction"
           icon="ri-calendar-line"
         />
-       
+        <Select
+          name="duration"
+          icon="ri-time-line"
+          placeholder="Select Duration"
+          options={["1 Day", "3 Days", "1 Week", "Custom"]}
+        />
+        <Select
+          name="doorDelivery"
+          icon="ri-truck-line"
+          placeholder="Door Delivery"
+          options={["Yes", "No"]}
+        />
         <Input
           type="text"
           name="doorDeliveryTerms"
           placeholder="Door Delivery Terms"
           icon="ri-file-text-line"
         />
-       
+        <Select
+          name="matchTheOffer"
+          icon="ri-shake-hands-line"
+          placeholder="Match The Offer"
+          options={["Yes", "No"]}
+        />
         <Input
           type="number"
           name="winnersCount"
           placeholder="How Many Winners Can Match The Offer"
           icon="ri-user-star-line"
         />
-       
+        <Select
+          name="top3SocialCause"
+          icon="ri-heart-line"
+          placeholder="Your Top 3 Preferred Social Cause"
+          options={["Education", "Environment", "Healthcare", "Others"]}
+        />
         <Input
           type="number"
           name="startPriceBid"
           placeholder="Start Price Bid (After Platform Charges)"
           icon="ri-price-tag-line"
         />
-         <div className="flex gap-2 items-start">
-              <input type="checkbox" className="mt-1" />
-              <p className="text-[0.9rem]">
-                I have read and accept the{" "}
-                <span className="text-primary">Terms</span> and{" "}
-                <span className="text-primary">Privacy Policy</span>
-              </p>
-            </div>
-        <div className="flex justify-between md:justify-start gap-4 items-center">
-              <Link href="/" className="block">
-                <Button
-                  style="w-36 lg:col-span-2 bg-white text-text text-[1rem]"
-                  label="Sign Up"
-                />
-              </Link>
-              <Link href="/auth/signin" className="hover:text-primary cursor-pointer">
-                Sign In
-              </Link>
-            </div>
+        <Button style="md:w-56 w-full lg:col-span-2" label="Add" />
       </form>
     </section>
   );
 };
 
-export default SignUp;
-
+export default AddAuction;

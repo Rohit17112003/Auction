@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const AuctionHistoryCard = ({ name, img, carName, auctionNo, time }) => {
   return (
-    <Link href={`/live-auctions/${name}`}>
+    <Link href={`/auction-history/${name}`}>
       <div className="container-bg flex flex-col gap-6 p-3 lg:flex-row">
         <Image
           className="w-full rounded-lg lg:w-44"

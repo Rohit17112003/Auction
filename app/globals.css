@@ -12,10 +12,13 @@
   --color-brown:#634C07;
   --color-darkyellow:#C6970E;
   --color-lightyellow:#DDA90F;
-  --color-green:#2CB24B;
   --color-lightgray:#B8343429;
   --color-extralightgray:#97757511;
   --color-pink:#af6b76;
+  --color-red:	#dc2626;
+  --color-darkred:#b91c1c;
+  --color-green:#22c55e;
+  --color-darkgreen:#16a34a;
 }
 
 @layer utilities {
