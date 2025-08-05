@@ -14,6 +14,8 @@
   --color-lightyellow:#DDA90F;
   --color-green:#2CB24B;
   --color-lightgray:#B8343429;
+  --color-extralightgray:#97757511;
+  --color-pink:#af6b76;
 }
 
 @layer utilities {

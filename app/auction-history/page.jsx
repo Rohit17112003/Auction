@@ -1,5 +1,5 @@
-import AuctionHistory from "@/ui/pages/auction-history/page";
-import MainLayout from "@/ui/templates/MainLayout";
+import AuctionHistory from "@/components/pages/auction-history/page";
+import MainLayout from "@/components/templates/MainLayout";
 
 const page = () => {
   return (

@@ -1,5 +1,5 @@
-import ReferVendor from "@/ui/pages/refer-vendor";
-import MainLayout from "@/ui/templates/MainLayout";
+import ReferVendor from "@/components/pages/refer-vendor";
+import MainLayout from "@/components/templates/MainLayout";
 
 const page = () => {
   return (

@@ -1,5 +1,5 @@
-import LiveBidding from "@/ui/pages/live-auctions/live-bidding";
-import MainLayout from "@/ui/templates/MainLayout";
+import LiveBidding from "@/components/pages/live-auctions/live-bidding";
+import MainLayout from "@/components/templates/MainLayout";
 
 const page = async ({ params }) => {
   const { biddingID } = await params;

@@ -1,5 +1,5 @@
-import RedeemHistory from "@/ui/pages/redeem-history";
-import MainLayout from "@/ui/templates/MainLayout";
+import RedeemHistory from "@/components/pages/redeem-history";
+import MainLayout from "@/components/templates/MainLayout";
 
 const page = () => {
   return (

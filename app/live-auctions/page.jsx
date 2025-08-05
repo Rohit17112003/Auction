@@ -1,5 +1,5 @@
-import LiveAuctions from "@/ui/pages/live-auctions";
-import MainLayout from "@/ui/templates/MainLayout";
+import LiveAuctions from "@/components/pages/live-auctions";
+import MainLayout from "@/components/templates/MainLayout";
 
 const page = () => {
   return (

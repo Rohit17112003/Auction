@@ -42,13 +42,8 @@
     },
     {
       "icon": "ri-error-warning-line",
-      "route": "/complaints",
-      "label": "complaints"
-    },
-    {
-      "icon": "ri-close-circle-line",
-      "route": "/cancellation",
-      "label": "cancellation"
+      "route": "/complaints-cancellation",
+      "label": "complaints/cancellation"
     }
   ],
   "stats": [

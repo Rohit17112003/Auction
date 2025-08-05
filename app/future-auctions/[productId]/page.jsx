@@ -1,5 +1,5 @@
-import ProductDetail from "@/ui/pages/future-auctions/product-deatail";
-import MainLayout from "@/ui/templates/MainLayout";
+import ProductDetail from "@/components/pages/future-auctions/product-deatail";
+import MainLayout from "@/components/templates/MainLayout";
 
 const page = async ({ params }) => {
   const { productId } = await params;

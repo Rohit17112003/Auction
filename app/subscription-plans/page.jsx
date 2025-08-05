@@ -1,5 +1,5 @@
-import SubscriptionPlans from "@/ui/pages/subscription-plans";
-import MainLayout from "@/ui/templates/MainLayout";
+import SubscriptionPlans from "@/components/pages/subscription-plans";
+import MainLayout from "@/components/templates/MainLayout";
 
 const page = () => {
   return (

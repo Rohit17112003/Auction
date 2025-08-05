@@ -1,10 +1,10 @@
-import PaymentManagement from "@/components/pages/payment-management";
+import AddAuction from "@/components/pages/add-new-auction";
 import MainLayout from "@/components/templates/MainLayout";
 
 const page = () => {
   return (
     <MainLayout pageTitle={"Hi Admin 👋"}>
-      <PaymentManagement />
+      <AddAuction />
     </MainLayout>
   );
 };

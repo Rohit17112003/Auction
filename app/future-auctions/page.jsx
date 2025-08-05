@@ -1,5 +1,5 @@
-import FutureAuctions from "@/ui/pages/future-auctions";
-import MainLayout from "@/ui/templates/MainLayout";
+import FutureAuctions from "@/components/pages/future-auctions";
+import MainLayout from "@/components/templates/MainLayout";
 
 const page = () => {
   return (
