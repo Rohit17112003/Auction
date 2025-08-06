@@ -6,14 +6,40 @@ import data from "@/public/database/nav.json";
 const HomePage = () => {
   const { stats } = data;
 
-  const bannerData = new Array(4).fill({
-    bgStyle: {
-      background:
-        "linear-gradient(to right, var(--color-brown), var(--color-darkyellow))",
+  const bannerData = [
+    {
+      bgStyle: {
+        background:
+          "linear-gradient(to right, var(--color-brown), var(--color-darkyellow))",
+      },
+      title: "Subscription Plan",
+      description: "Know your subscription plan",
     },
-    title: "Discount Coupon",
-    description: "Amount sold through discount vouchers",
-  });
+    {
+      bgStyle: {
+        background:
+          "linear-gradient(to right, var(--color-brown), var(--color-darkyellow))",
+      },
+      title: "Discount Coupon",
+      description: "Amount sold through discount vouchers",
+    },
+    {
+      bgStyle: {
+        background:
+          "linear-gradient(to right, var(--color-brown), var(--color-darkyellow))",
+      },
+      title: "Refer a Vendor",
+      description: "Refer a vendor and earn rewards",
+    },
+    {
+      bgStyle: {
+        background:
+          "linear-gradient(to right, var(--color-brown), var(--color-darkyellow))",
+      },
+      title: "Discount Invoce",
+      description: "Create a discount invoice",
+    },
+  ];
 
   return (
     <div className="space-y-5">
@@ -25,7 +51,7 @@ const HomePage = () => {
 
       <AuctionInfoTable />
 
-      <section className="grid gap-5 lg:grid-cols-2">
+      <section className="grid gap-5 md:grid-cols-2">
         {bannerData.map((banner, i) => (
           <BannerContainer key={i} {...banner} />
         ))}
