@@ -3,7 +3,7 @@ import nav from "@/public/database/nav.json";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import DashboardLink from "../atoms/DashboardLink";
-import LogoutModal from "../pages/LogOut"; // ya apke folder structure ke hisaab se
+import LogoutModal from "../pages/LogOut"; 
 
 const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   const path = usePathname();
@@ -13,7 +13,6 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   const [showLogoutModal, setShowLogoutModal] = useState(false);
 
   const handleLogoutConfirm = () => {
-    // Yahan token clear karna ho ya koi aur logout logic
     router.replace("/auth/signin");
     setShowLogoutModal(false);
   };

@@ -2,7 +2,7 @@ import AuctionHistoryCard from "@/components/molecules/AuctionHistoryCard";
 
 const AuctionHistory = () => {
   return (
-    <section className="grid gap-10 lg:grid-cols-2">
+    <section className="grid gap-6 lg:grid-cols-2">
       {auctions.map((auction, index) => (
         <AuctionHistoryCard key={index} {...auction} />
       ))}

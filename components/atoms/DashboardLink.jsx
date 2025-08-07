@@ -26,9 +26,9 @@ const DashboardLink = ({
           onClick={toggleSubMenu}
           className={`${
             active
-              ? "bg-primary/70 text-light"
+              ? "bg-darkyellow/90 text-light"
               : "bg-transparent text-dark"
-          } flex w-full flex-row  items-center justify-between rounded-md px-3 py-2.5 transition-all duration-200 hover:bg-primary/10 hover:text-primary`}
+          } flex w-full flex-row  items-center justify-between rounded-md px-3 py-2.5 transition-all duration-200 hover:bg-lightyellow/10 hover:text-darkyellow`}
         >
           <span className="text-md flex items-center gap-1.5">
             <i className={`${heroIcon} ri-lg`}></i>

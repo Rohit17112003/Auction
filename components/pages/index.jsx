@@ -14,6 +14,7 @@ const HomePage = () => {
       },
       title: "Subscription Plan",
       description: "Know your subscription plan",
+      url:"/subscription-plans",
     },
     {
       bgStyle: {
@@ -22,6 +23,7 @@ const HomePage = () => {
       },
       title: "Discount Coupon",
       description: "Amount sold through discount vouchers",
+      url:"/discount-coupons",
     },
     {
       bgStyle: {
@@ -30,14 +32,16 @@ const HomePage = () => {
       },
       title: "Refer a Vendor",
       description: "Refer a vendor and earn rewards",
+      url:"/refer",
     },
     {
       bgStyle: {
         background:
           "linear-gradient(to right, var(--color-brown), var(--color-darkyellow))",
       },
-      title: "Discount Invoce",
+      title: "Discount Invoice",
       description: "Create a discount invoice",
+      url:"/discount-invoice",
     },
   ];
 
@@ -51,7 +55,7 @@ const HomePage = () => {
 
       <AuctionInfoTable />
 
-      <section className="grid gap-5 md:grid-cols-2">
+      <section className="grid gap-5 md:grid-cols-2 pb-10">
         {bannerData.map((banner, i) => (
           <BannerContainer key={i} {...banner} />
         ))}

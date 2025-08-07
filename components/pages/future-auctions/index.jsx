@@ -10,7 +10,7 @@ const FutureAuctions = () => {
     image="/image/doctor.svg"
     url="/future-auctions/add"
   />
-  <div className="grid gap-8 lg:grid-cols-2">
+  <div className="grid gap-6 lg:grid-cols-2">
     {auctions.map((auction, index) => (
       <FutureAuctionCard key={index} {...auction} />
     ))}

@@ -1,85 +1,91 @@
 import BannerButton from "@/components/atoms/BannerButton";
 
+const paidPlans = [
+  {
+    title: "Launch Offer",
+    bgHeader: "bg-darkyellow/70",
+    bgBody: "bg-darkyellow/80",
+    highlight: "12 months 2500 INR",
+    features: [
+      "List 25 products/services",
+      "List - 1 product per auction day",
+      "Benefits - Refer and earn vendors (10% for basic and 15% for premium vendors)",
+      "Income tax exemption certificates as per applicability and govt guidelines",
+      "Transaction fee: Rs 250/- or 3% of highest bid value (whichever is higher)",
+    ],
+  },
+  {
+    title: "Launch Offer",
+    bgHeader: "bg-lightyellow",
+    bgBody: "bg-darkyellow",
+    highlight: "12 months 5000 INR",
+    features: [
+      "List 25 products/services",
+      "Listing per day - 5 products per auction day",
+      "Benefits - Refer and earn vendors (10% for basic and 20% for premium vendors)",
+      "Income tax exemption certificates as per applicability and govt guidelines",
+      "Transaction fee: Rs 150/- or 2% of highest bid value (whichever is higher)",
+      "Match the Offer",
+      "Discount Offering for Bidders",
+      "Periodic analytic reports on bidder preferences",
+      "Priority support from the company vendor assistance team",
+    ],
+  },
+];
+
 const SubscriptionPlans = () => {
   return (
-    <section className="space-y-10">
-      <BannerButton route={"/"} label={"Subscription Plans"} />
-      <div className="mx-auto flex flex-col lg:items-end justify-center gap-10 lg:flex-row">
-        <div className="bg-primary rounded-xl p-1">
-          <h2 className="px-8 py-2 text-center text-xl font-semibold text-white">
-            Basic Plan
+    <section className="mb-10 space-y-6">
+      <BannerButton route="/" label="Subscription Plans" />
+
+      <div className="md:px-10">
+        <div className="border-light rounded-xl border-3">
+          <h2 className="text-light bg-darkyellow/75 border-light rounded-t-xl border-b-3 py-3 text-center text-xl font-bold tracking-wide md:text-2xl">
+            Launch Offer
           </h2>
-          <div
-            className="flex flex-col justify-center gap-3  rounded-b-xl px-14 py-10"
-            style={{
-              background: " url('/image/glitter.jpg')",
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-            }}
-          >
-            <h3 className="text-center text-4xl font-semibold text-white">
-              1 Months <br />
-              <span className="text-primary">Free</span>
+          <div className="bg-darkyellow/90 flex flex-col items-center justify-center gap-5 rounded-b-xl py-8">
+            <h3 className="text-light px-4 text-center text-xl font-medium tracking-wide md:text-4xl">
+              Free for 30 DAY’S only for 5 products
             </h3>
-            <p className="text-center text-base font-semibold text-white">
-              Add 5 Products
-            </p>
-            <button className="text-primary rounded-full bg-white px-6 py-2 font-semibold">
+            <button className="bg-light border border-light cursor-pointer text-darkyellow hover:text-light hover:bg-lightyellow flex w-40 justify-center rounded-full px-6 py-3 font-semibold tracking-wide md:py-2.5">
               Subscribe
             </button>
           </div>
         </div>
-        <div className="rounded-xl bg-[#FF8A00] p-1">
-          <h2 className="px-8 py-2 text-center text-2xl font-semibold text-white">
-            Silver Plan
-          </h2>
-          <div
-            className="flex flex-col justify-center gap-5 rounded-b-xl p-14"
-            style={{
-              background: " url('/image/glitter.jpg')",
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-            }}
-          >
-            <h3 className="text-center text-4xl font-semibold text-white">
-              06 Months <br />
-              <span className="text-[#FF8A00]">7000 INR</span>
-            </h3>
-            <p className="text-center text-base font-semibold text-white">
-              Add 50 Products
-            </p>
-            <button className="rounded-full bg-white px-6 py-2 font-semibold text-[#FF8A00]">
-              Subscribe
-            </button>
-          </div>
-        </div>
-        <div className="bg-primary rounded-xl p-1">
-          <h2 className="px-8 py-2 text-center text-xl font-semibold text-white">
-            Gold Plan
-          </h2>
-          <div
-            className="flex flex-col justify-center gap-3 rounded-b-xl px-14 py-10"
-            style={{
-              background: " url('/image/glitter.jpg')",
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-            }}
-          >
-            <h3 className="text-center text-4xl font-semibold text-white">
-              2 Months <br />
-              <span className="text-primary">10,000 </span>
-            </h3>
-            <p className="text-center text-base font-semibold text-white">
-              Add 150 Products
-            </p>
-            <button className="text-primary rounded-full bg-white px-6 py-2 font-semibold">
-              Subscribe
-            </button>
-          </div>
-        </div>
+      </div>
+
+      <div className="grid gap-6 md:grid-cols-2 md:px-10">
+        {paidPlans.map(
+          ({ bgHeader, bgBody, highlight, features, title }, index) => (
+            <div key={index}>
+              <div className="border-light rounded-xl border-3">
+                <h2
+                  className={`text-light ${bgHeader} border-light rounded-t-xl border-b-3 py-3 text-center text-xl font-bold tracking-wide md:text-2xl`}
+                >
+                  {title}
+                </h2>
+                <div
+                  className={`${bgBody} flex flex-col items-center justify-center gap-5 rounded-b-xl px-4 py-8`}
+                >
+                  <h3 className="text-light text-center text-2xl leading-12 font-bold tracking-widest uppercase md:px-16 md:text-4xl">
+                    {highlight}
+                  </h3>
+                  <ul className="text-light -mt-2 space-y-2 text-[1.1rem] tracking-wide">
+                    {features.map((feature, i) => (
+                      <li key={i} className="flex  gap-2">
+                        <i className="ri-circle-fill text-[0.4rem] mt-2.5"></i>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <button className="bg-light border border-light cursor-pointer text-darkyellow hover:text-light hover:bg-lightyellow flex w-40 justify-center rounded-full px-6 py-3 font-semibold tracking-wide md:py-2.5">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </div>
+          ),
+        )}
       </div>
     </section>
   );
