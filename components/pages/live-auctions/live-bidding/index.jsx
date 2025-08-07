@@ -9,7 +9,7 @@ const LiveBidding = () => {
         <div className="space-y-6">
           <Image
             className="h-52 rounded-xl object-cover"
-            src="/Image/car.jpg"
+            src="/image/car.jpg"
             alt="car"
             width={400}
             height={400}

@@ -1,6 +1,5 @@
 export const getCloudinaryPublicId = (imageUrl) => {
     try {
-      // Remove the file extension to get the public ID
       const publicId = imageUrl.slice(
         imageUrl.lastIndexOf("/") + 1,
         imageUrl.lastIndexOf("."),
